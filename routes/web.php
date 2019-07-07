@@ -11,6 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/',"HomeController@home");
+Route::get('/customer/login',"CustomerController@login");
+Route::get('/customer/signup','CustomerController@signup');
+Route::post('/customer/signupsubmit','CustomerController@signupsubmit');
