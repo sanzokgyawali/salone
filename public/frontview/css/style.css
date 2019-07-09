@@ -10,21 +10,20 @@
 
 
 }
-.down-box a{
-	text-decoration: none;
-	color:#fff;
-}
-button{
-	
-}
 .sub-container
 {
 	height: 100vh;
-	width: 100%;
+	width: 40%;
+	margin:auto;
 	background-color: #101010;
 	display: flex;
     flex-direction: column;
-    	display: none;
+
+}
+.options
+{
+
+	color:#6d6666 !important;
 }
 .main-header
 {
@@ -233,13 +232,49 @@ padding-top:40px;
 {
 	transform: translateY(5px);
 }
+@media only screen and (max-width: 1200px)
+{
 
+.sub-container
+{
+	width:90%;
+	}
+
+}
+@media only screen and (max-width: 900px)
+{
+
+.sub-container
+{
+	width:60%;
+	}
+
+}
+@media only screen and (max-width: 700px)
+{
+
+.sub-container
+{
+	width:90%;
+	}
+
+}
 @media only screen and (max-width: 600px)
 {
 
 .sub-container
 {
-	display: block;
+	width:95%;
+	}
+
+}
+
+@media only screen and (max-width: 500px)
+{
+
+.sub-container
+{
+	width:100%;
 	}
 
 }

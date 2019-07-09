@@ -18,8 +18,12 @@ class CreateCustomerLoginsTable extends Migration
             $table->string("cust_full_name");
             $table->string("cust_display_name");
             $table->string("cust_email")->unique();
+            $table->string("OTP")->nullable();
+            $table->string("email_verified")->nullable();
             $table->string("cust_phone");
-            $table->unsignedBigInteger("ward_id");
+            $table->string("street_name");
+            $table->unsignedBigInteger("ward_id")->nullable();
+            $table->string("password");
             $table->foreign("ward_id")->references("ward_id")->on("ward_nos");
             $table->timestamps();
         });
